@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Завдання 3</h1>
+    <div id="output"></div>
+
+    <script>
+        var outputContainer = document.getElementById('output');
+        var output = '';
+
+        output += '<span style="color: red;">КОНСТАНТИ</span><br>';
+        output += 'Значення константи е = <span style="color: red;">' + Math.E + '</span><br>';
+        output += 'Значення константи π = <span style="color: red;">' + Math.PI + '</span><br>';
+        output += 'Десятковий логарифм постійної Ейлера (е) = <span style="color: red;">' + Math.log10(Math.E) + '</span><br>';
+        output += 'Двійковий логарифм постійної Ейлера (е) = <span style="color: red;">' + Math.log2(Math.E) + '</span><br>';
+        output += 'Натуральний логарифм числа 10 = <span style="color: red;">' + Math.log(10) + '</span><br>';
+        output += 'Натуральний логарифм числа 2 = <span style="color: red;">' + Math.log(2) + '</span><br>';
+        output += 'Корінь квадратний із двох = <span style="color: red;">' + Math.sqrt(2) + '</span><br>';
+        output += 'Корінь квадратний з однієї другий = <span style="color: red;">' + Math.sqrt(1 / 2) + '</span><br><br>';
+
+        output += '<span style="color: red;">ФУНКЦІЇ</span><br>';
+        output += 'Результат зведення в ступінь: 42 = <span style="color: red;">' + Math.pow(42, 2) + '</span><br>';
+        output += 'Результат добування квадратного кореня з 4: y = <span style="color: red;">' + Math.sqrt(4) + '</span><br>';
+        output += 'Результат добування квадратного кореня з -9: y = <span style="color: red;">' + Math.sqrt(-9) + '</span><br>';
+        output += 'Результат обчислення абсолютного значення -9: y = <span style="color: red;">' + Math.abs(-9) + '</span><br>';
+        output += 'Результат обчислення косинуса нуля радіан: y = <span style="color: red;">' + Math.cos(0) + '</span><br>';
+        output += 'Косинус 180 градусів (π радіан): y = <span style="color: red;">' + Math.cos(Math.PI) + '</span><br>';
+        output += 'Результат обчислення арккосинуса нуля: y = <span style="color: red;">' + Math.acos(0) + '</span><br>';
+        output += 'Результат обчислення синуса нуля радіан: y = <span style="color: red;">' + Math.sin(0) + '</span><br>';
+        output += 'Синус 90 градусів (π /2 радіан): y = <span style="color: red;">' + Math.sin(Math.PI / 2) + '</span><br>';
+        output += 'Результат обчислення арксинуса одиниці: y = <span style="color: red;">' + Math.asin(1) + '</span><br>';
+        output += 'Тангенс 45 градусів (π /4 радіан): y = <span style="color: red;">' + Math.tan(Math.PI / 4) + '</span><br>';
+        output += 'Результат обчислення арктангенса одиниці: y = <span style="color: red;">' + Math.atan(1) + '</span><br>';
+        output += 'Результат зведення е в ступінь 2: y = <span style="color: red;">' + Math.exp(2) + '</span><br>';
+        output += 'Натуральний логарифм від e^2: y = <span style="color: red;">' + Math.log(Math.exp(2)) + '</span><br>';
+        output += 'Результат обчислення десяткового логарифма від числа 100: y = <span style="color: red;">' + Math.log10(100) + '</span><br>';
+        output += 'Результат обчислення двійкового логарифма від числа 8: y = <span style="color: red;">' + Math.log2(8) + '</span><br>';
+        output += 'Тангенс 45 градусів (з округленням): y = <span style="color: red;">' + Math.round(Math.tan(Math.PI / 4)) + '</span><br>';
+        output += 'Результат округлення числа 1.00123 у більшу сторону: y = <span style="color: red;">' + Math.ceil(1.00123) + '</span><br>';
+        output += 'Результат округлення числа -3.1234 у більшу сторону: y = <span style="color: red;">' + Math.ceil(-3.1234) + '</span><br>';
+        output += 'Результат округлення числа 1.00123 у меншу сторону: y = <span style="color: red;">' + Math.floor(1.00123) + '</span><br>';
+        output += 'Результат округлення числа -3.1234 у меншу сторону: y = <span style="color: red;">' + Math.floor(-3.1234) + '</span><br>';
+        output += 'Результат округлення числа 1.44 за правилами арифметики: y = <span style="color: red;">' + Math.round(1.44) + '</span><br>';
+        output += 'Результат округлення числа 1.54 за правилами арифметики: y = <span style="color: red;">' + Math.round(1.54) + '</span><br>';
+        output += 'Вибір найбільшого із двох чисел 4 й 2: y = <span style="color: red;">' + Math.max(4, 2) + '</span><br>';
+        output += 'Вибір найменшого із двох чисел 4 й 2: y = <span style="color: red;">' + Math.min(4, 2) + '</span><br><br>';
+
+        output += '<span style="color: red;">ГЕНЕРАТОР ВИПАДКОВИХ ЧИСЕЛ</span><br>';
+        output += 'Формування випадкових чисел в інтервалі [0;1]: y = <span style="color: red;">' + Math.random() + '</span><br>';
+
+        document.getElementById('output').innerHTML = output;
+
+    </script>
+
+    <ul>
+        <li><a href="index.html">Завдання 1</a></li>
+        <li><a href="task2.html">Завдання 2</a></li>
+        <li>Завдання 3</li>
+        <li><a href="task4.html">Завдання 4</a></li>
+    </ul>
+</body>
+
+</html>

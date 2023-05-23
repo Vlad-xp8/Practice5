@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Завдання 2</h1>
+    <button onclick="saying()" class="1">Г. Сковорода</button>
+    <button onclick="saying()" class="2">Д. Лихачев </button>
+    <button onclick="saying()" class="3">Горацій</button>
+    <button onclick="saying()" class="4">Цицерон</button>
+    <button onclick="saying()" class="5">М. Шумило</button>
+    
+    <script>
+         function saying() {
+            let button = event.target;
+            let buttonClass = button.getAttribute('class');
+            if (buttonClass === '1') {
+                alert("Кожному мила своя сторона");
+            } else if (buttonClass === '2') {
+                alert("Усвідомлена любов до свого народу не поєднується з ненавистю до інших.");
+            } else if (buttonClass === '3') {
+                alert("Ті, що виїздять за море, міняють небо, а не душу.");
+            } else if (buttonClass === '4') {
+                alert("Для нас дорогі батьки, дорогі діти, близькі, родичі; але всі уявлення про любов до чого-небудь поєднані в одному слові «вітчизна».");
+            } else if (buttonClass === '5') {
+                alert("Мова — це глибина тисячоліть.");
+            }
+        }
+    </script>
+    <ul>
+        <li><a href="index.html">Завдання 1</a></li>
+        <li>Завдання 2</li>
+        <li><a href="task3.html">Завдання 3</a></li>
+        <li><a href="task4.html">Завдання 4</a></li>
+    </ul>
+</body>
+
+</html>

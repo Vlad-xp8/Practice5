@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Завдання 4</h1>
+    <script>
+        function math() {
+            var x, Y;
+            x = parseInt(document.getElementById("t_x").value);
+            if (x < 0) {
+                Y = Math.exp(3) - Math.sin(x);
+            } else if (x > 0) {
+                Y = Math.log(x) + Math.sqrt(2 * x);
+            } else {
+                Y = 89;
+            }
+            document.getElementById("t_Y").value = Y;
+        }
+    </script>
+
+    <form id="main_form">
+        <pre>
+            <code>
+                Y = e<sup>3</sup> - sin(x), x < 0;
+                Y = 89, x = 0;
+                Y = lg(x) - &radic;(2 * x), x > 0;
+            </code>
+        </pre>
+
+        x <input type="text" id="t_x" value="10"><br>
+        Y <input type="text" id="t_Y" value=""><br>
+        <input type="button" onclick="math();" value="Розрахувати">
+    </form>
+
+    <ul>
+        <li><a href="index.html">Завдання 1</a></li>
+        <li><a href="task2.html">Завдання 2</a></li>
+        <li><a href="task3.html">Завдання 3</a></li>
+        <li>Завдання 4</li>
+    </ul>
+</body>
+
+</html>

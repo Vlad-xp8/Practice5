@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Завдання 1</h1>
+    <button onclick="generate()">Запустити</button>
+    <div id="visitCardsContainer"></div>
+
+    <script>
+        function generate() {
+            var name = prompt('Input name', '');
+            var position = prompt('Input position', '');
+            var phone = prompt('Input phone', '');
+
+            var visitcard = ' <table border="0">'
+                + ' <tr>'
+                + ' <td align="center" valign="center">'
+                + ' <img src="img/firefox-icon.png">'
+                + ' </td>'
+                + ' <td align="center">'
+                + ' <b>' + name + '</b><br>'
+                + ' <i>' + position + '</i><br>'
+                + ' <font color="blue">' + phone + '</font>'
+                + ' </td>'
+                + ' </tr>'
+                + ' </table>';
+
+            var visitCardsContainer = document.getElementById('visitCardsContainer');
+            visitCardsContainer.innerHTML = '';
+
+            var table = document.createElement('table');
+            table.width = '100%';
+            table.border = '0';
+            table.align = 'center';
+
+            for (var y = 0; y < 12; y++) {
+                var row = document.createElement('tr');
+                for (var x = 0; x < 3; x++) {
+                    var cell = document.createElement('td');
+                    cell.align = 'center';
+                    cell.style.borderStyle = 'dashed';
+                    cell.style.borderWidth = 'thin';
+                    cell.innerHTML = visitcard;
+                    row.appendChild(cell);
+                }
+                table.appendChild(row);
+            }
+
+            visitCardsContainer.appendChild(table);
+        }
+    </script>
+<ul>
+    <li>Завдання 1</li>
+    <li><a href="task2.html">Завдання 2</a></li>
+    <li><a href="task3.html">Завдання 3</a></li>
+    <li><a href="task4.html">Завдання 4</a></li>
+</ul>
+</body>
+
+</html>
